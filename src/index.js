@@ -5,7 +5,7 @@ import router from './router.js';
 
 const app = express();
 const port = 3000;
-app.use(cors({ credentials: true, origin: "*" }))
+app.use(cors({ credentials: true, origin: ["*", "https://gabrielpedoa-loginauth-raquel.netlify.app"] }))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(router())
